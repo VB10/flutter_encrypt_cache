@@ -17,7 +17,7 @@ Future<void> _init() async {
   WidgetsFlutterBinding.ensureInitialized();
   await dotenv.load(fileName: AppConstants.DOTENV_PATH);
 
-  await ItemModelCache.dummy().clearAllDatas();
+  await ItemModelCache.dummy().clearAllDatasWithExpiry();
 }
 
 class MyApp extends StatelessWidget {

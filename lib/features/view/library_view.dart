@@ -32,7 +32,7 @@ class _LibraryViewState extends State<LibraryView> {
 
   FloatingActionButton buildFloatingActionButtonDelete() => FloatingActionButton(
       onPressed: () async {
-        await ItemModelCache.dummy().clearAllDatas();
+        await itemCache.clearAllDatas();
         setState(() {});
       },
       child: Icon(Icons.delete_forever));
